@@ -12,14 +12,14 @@ class UserSeeder extends Seeder
     {
         // Credential demo (tulis juga di README)
         User::create([
-            'name' => 'Admin Demo',
+            'name' => 'Budi Prasetyo',
             'email' => 'admin@eventku.test',
             'password' => Hash::make('password'),
             'role' => 'admin',
         ]);
 
         User::create([
-            'name' => 'Peserta Demo',
+            'name' => 'Siti Rahayu',
             'email' => 'peserta@eventku.test',
             'password' => Hash::make('password'),
             'role' => 'participant',

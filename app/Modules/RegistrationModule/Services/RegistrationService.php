@@ -8,6 +8,7 @@ use App\Modules\RegistrationModule\Events\TicketPurchased;
 use App\Modules\RegistrationModule\Models\Participant;
 use App\Modules\RegistrationModule\Models\Registration;
 use App\Modules\TicketModule\Contracts\TicketServiceInterface;
+use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
 
@@ -47,5 +48,13 @@ class RegistrationService implements RegistrationServiceInterface
         } while (Registration::query()->where('unique_code', $code)->exists());
 
         return $code;
+    }
+
+    public function allForAdmin(): Collection
+    {
+        return Registration::query()
+            ->with('participant.user', 'ticket.event')
+            ->latest()
+            ->get();
     }
 }

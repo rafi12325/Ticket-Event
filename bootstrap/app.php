@@ -18,8 +18,14 @@ return Application::configure(basePath: dirname(__DIR__))
             'role' => \App\Http\Middleware\EnsureUserHasRole::class,
         ]);
 
-        // Gagal auth di request API → JSON 401, bukan redirect ke route 'login'
-        $middleware->redirectGuestsTo(fn () => null);
+        // Gagal auth: API → JSON 401, halaman web → redirect ke login
+        $middleware->redirectGuestsTo(function (Request $request) {
+            if ($request->is('api/*') || $request->expectsJson()) {
+                return null;
+            }
+
+            return route('login');
+        });
     })
     ->withExceptions(function (Exceptions $exceptions): void {
         $exceptions->shouldRenderJsonWhen(

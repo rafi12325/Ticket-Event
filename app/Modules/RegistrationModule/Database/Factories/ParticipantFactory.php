@@ -13,8 +13,8 @@ class ParticipantFactory extends Factory
     {
         return [
             'user_id' => \App\Models\User::factory(),
-            'phone' => fake()->phoneNumber(),
-            'address' => fake()->address(),
+            'phone' => fake('id_ID')->phoneNumber(),
+            'address' => fake('id_ID')->address(),
         ];
     }
 }

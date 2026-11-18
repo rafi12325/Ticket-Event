@@ -45,7 +45,7 @@ class RegistrationController extends Controller
     // Admin: semua registrasi
     public function all(): JsonResponse
     {
-        return response()->json(['data' => Registration::query()->with('participant.user', 'ticket.event')->latest()->get()]);
+        return response()->json(['data' => $this->service->allForAdmin()]);
     }
 
     // Participant: lengkapi profil
