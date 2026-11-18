@@ -3,6 +3,7 @@
 namespace App\Modules\TicketModule\Models;
 
 use App\Modules\EventModule\Models\Event;
+use App\Modules\RegistrationModule\Models\Participant;
 use App\Modules\RegistrationModule\Models\Registration;
 use App\Modules\TicketModule\Database\Factories\TicketFactory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -33,6 +34,14 @@ class Ticket extends Model
     public function registrations()
     {
         return $this->hasMany(Registration::class);
+    }
+
+    // Many-to-Many (inverse): Ticket <-> Participant melalui tabel pivot registrations
+    public function participants()
+    {
+        return $this->belongsToMany(Participant::class, 'registrations')
+            ->withPivot('quantity', 'unique_code', 'status')
+            ->withTimestamps();
     }
 
     // Kuota tersisa dihitung, tidak disimpan — selalu konsisten
