@@ -3,7 +3,7 @@
 namespace App\Modules\TicketModule\Http\Controllers;
 
 use App\Modules\EventModule\Models\Event;
-use App\Modules\TicketModule\Contracts\TicketServiceInterface;
+use App\Shared\Contracts\TicketServiceInterface;
 use App\Modules\TicketModule\Http\Requests\StoreTicketRequest;
 use App\Modules\TicketModule\Models\Ticket;
 use App\Http\Controllers\Controller;

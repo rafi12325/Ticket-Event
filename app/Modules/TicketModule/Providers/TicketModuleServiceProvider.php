@@ -2,7 +2,7 @@
 
 namespace App\Modules\TicketModule\Providers;
 
-use App\Modules\TicketModule\Contracts\TicketServiceInterface;
+use App\Shared\Contracts\TicketServiceInterface;
 use App\Modules\TicketModule\Services\TicketService;
 use Illuminate\Support\ServiceProvider;
 

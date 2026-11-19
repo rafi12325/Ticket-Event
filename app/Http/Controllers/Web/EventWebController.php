@@ -3,8 +3,8 @@
 namespace App\Http\Controllers\Web;
 
 use App\Http\Controllers\Controller;
-use App\Modules\EventModule\Contracts\EventServiceInterface;
-use App\Modules\TicketModule\Contracts\TicketServiceInterface;
+use App\Shared\Contracts\EventServiceInterface;
+use App\Shared\Contracts\TicketServiceInterface;
 
 // Controller untuk halaman Blade (public).
 // Masih memakai Contract modul — konsisten dengan API, bukan akses model langsung.

@@ -3,9 +3,9 @@
 namespace App\Modules\TicketModule\Services;
 
 use App\Modules\EventModule\Models\Event;
-use App\Modules\TicketModule\Contracts\TicketServiceInterface;
-use App\Modules\TicketModule\Exceptions\QuotaExceededException;
-use App\Modules\TicketModule\Exceptions\TicketSoldOutException;
+use App\Shared\Contracts\TicketServiceInterface;
+use App\Shared\Exceptions\QuotaExceededException;
+use App\Shared\Exceptions\TicketSoldOutException;
 use App\Modules\TicketModule\Models\Ticket;
 use Illuminate\Support\Collection;
 

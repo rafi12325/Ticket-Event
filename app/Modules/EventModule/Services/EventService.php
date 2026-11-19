@@ -2,7 +2,7 @@
 
 namespace App\Modules\EventModule\Services;
 
-use App\Modules\EventModule\Contracts\EventServiceInterface;
+use App\Shared\Contracts\EventServiceInterface;
 use App\Modules\EventModule\Models\Event;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Str;

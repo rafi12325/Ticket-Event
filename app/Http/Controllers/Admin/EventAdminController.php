@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Modules\EventModule\Contracts\EventServiceInterface;
+use App\Shared\Contracts\EventServiceInterface;
 use App\Modules\EventModule\Http\Requests\StoreEventRequest;
 use App\Modules\EventModule\Http\Requests\UpdateEventRequest;
 use App\Modules\EventModule\Models\Event;

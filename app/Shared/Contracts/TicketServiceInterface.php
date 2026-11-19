@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Modules\TicketModule\Contracts;
+namespace App\Shared\Contracts;
 
 use App\Modules\EventModule\Models\Event;
 use App\Modules\TicketModule\Models\Ticket;

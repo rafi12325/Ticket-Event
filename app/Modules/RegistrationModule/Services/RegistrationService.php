@@ -3,11 +3,11 @@
 namespace App\Modules\RegistrationModule\Services;
 
 use App\Models\User;
-use App\Modules\RegistrationModule\Contracts\RegistrationServiceInterface;
+use App\Shared\Contracts\RegistrationServiceInterface;
 use App\Modules\RegistrationModule\Events\TicketPurchased;
 use App\Modules\RegistrationModule\Models\Participant;
 use App\Modules\RegistrationModule\Models\Registration;
-use App\Modules\TicketModule\Contracts\TicketServiceInterface;
+use App\Shared\Contracts\TicketServiceInterface;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;

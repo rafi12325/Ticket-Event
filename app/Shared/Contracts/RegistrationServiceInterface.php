@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Modules\RegistrationModule\Contracts;
+namespace App\Shared\Contracts;
 
 use App\Models\User;
 use App\Modules\RegistrationModule\Models\Registration;

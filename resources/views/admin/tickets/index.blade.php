@@ -40,9 +40,9 @@
                         </span>
                     </td>
                     <td class="px-4 py-3 whitespace-nowrap">
-                        <a href="{{ route('tickets.edit', $ticket->id) }}"
+                        <a href="{{ route('admin.tickets.edit', $ticket->id) }}"
                            class="text-xs text-slate-600 border border-slate-300 rounded px-2 py-1 hover:bg-slate-50 mr-1">Edit</a>
-                        <form method="POST" action="{{ route('tickets.destroy', $ticket->id) }}" class="inline"
+                        <form method="POST" action="{{ route('admin.tickets.destroy', $ticket->id) }}" class="inline"
                               onsubmit="return confirm('Hapus tiket ini?')">
                             @csrf
                             @method('DELETE')

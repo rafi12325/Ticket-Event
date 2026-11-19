@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Modules\EventModule\Contracts;
+namespace App\Shared\Contracts;
 
 use App\Modules\EventModule\Models\Event;
 use Illuminate\Support\Collection;

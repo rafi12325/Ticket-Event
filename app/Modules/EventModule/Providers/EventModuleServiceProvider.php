@@ -2,7 +2,7 @@
 
 namespace App\Modules\EventModule\Providers;
 
-use App\Modules\EventModule\Contracts\EventServiceInterface;
+use App\Shared\Contracts\EventServiceInterface;
 use App\Modules\EventModule\Services\EventService;
 use Illuminate\Support\ServiceProvider;
 

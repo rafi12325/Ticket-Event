@@ -9,7 +9,7 @@
 <div class="bg-white rounded-lg border border-slate-200 p-6 max-w-md">
     @include('partials.errors')
 
-    <form method="POST" action="{{ route('tickets.update', $ticket->id) }}" class="space-y-4">
+    <form method="POST" action="{{ route('admin.tickets.update', $ticket->id) }}" class="space-y-4">
         @csrf
         @method('PUT')
 

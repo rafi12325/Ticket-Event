@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Modules\RegistrationModule\Contracts\RegistrationServiceInterface;
+use App\Shared\Contracts\RegistrationServiceInterface;
 
 class RegistrationAdminController extends Controller
 {

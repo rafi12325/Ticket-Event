@@ -2,7 +2,7 @@
 
 namespace App\Modules\EventModule\Http\Controllers;
 
-use App\Modules\EventModule\Contracts\EventServiceInterface;
+use App\Shared\Contracts\EventServiceInterface;
 use App\Modules\EventModule\Http\Requests\StoreEventRequest;
 use App\Modules\EventModule\Http\Requests\UpdateEventRequest;
 use App\Modules\EventModule\Models\Event;

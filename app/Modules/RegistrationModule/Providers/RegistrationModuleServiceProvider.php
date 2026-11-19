@@ -2,7 +2,7 @@
 
 namespace App\Modules\RegistrationModule\Providers;
 
-use App\Modules\RegistrationModule\Contracts\RegistrationServiceInterface;
+use App\Shared\Contracts\RegistrationServiceInterface;
 use App\Modules\RegistrationModule\Events\TicketPurchased;
 use App\Modules\RegistrationModule\Listeners\SendTicketConfirmationListener;
 use App\Modules\RegistrationModule\Services\RegistrationService;

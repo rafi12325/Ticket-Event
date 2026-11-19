@@ -2,7 +2,7 @@
 
 namespace App\Modules\RegistrationModule\Http\Controllers;
 
-use App\Modules\RegistrationModule\Contracts\RegistrationServiceInterface;
+use App\Shared\Contracts\RegistrationServiceInterface;
 use App\Modules\RegistrationModule\Http\Requests\PurchaseTicketRequest;
 use App\Modules\RegistrationModule\Http\Requests\RegisterParticipantRequest;
 use App\Modules\RegistrationModule\Models\Participant;

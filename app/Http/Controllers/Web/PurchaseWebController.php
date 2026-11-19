@@ -3,10 +3,10 @@
 namespace App\Http\Controllers\Web;
 
 use App\Http\Controllers\Controller;
-use App\Modules\RegistrationModule\Contracts\RegistrationServiceInterface;
+use App\Shared\Contracts\RegistrationServiceInterface;
 use App\Modules\RegistrationModule\Http\Requests\PurchaseTicketRequest;
-use App\Modules\TicketModule\Exceptions\QuotaExceededException;
-use App\Modules\TicketModule\Exceptions\TicketSoldOutException;
+use App\Shared\Exceptions\QuotaExceededException;
+use App\Shared\Exceptions\TicketSoldOutException;
 
 // Membeli tiket dari halaman web.
 // Custom Exception ditangkap di sini dan ditampilkan sebagai pesan
